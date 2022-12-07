@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "Proyecto_AP/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Proyecto_AP/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
