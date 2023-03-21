@@ -24,11 +24,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "Proyecto_AP/css/bootstrap.css"
+              "css/bootstrap.css"
             ],
-            "scripts": [
-              "Proyecto_AP/js/bootstrap.js"
-            ]
+            "scripts": ["js/bootstrap.js"]
           },
           "configurations": {
             "production": {

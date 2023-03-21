@@ -1,3 +1,21 @@
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    margin-right: 10px;
+}
+
+.redes img{
+    margin: 5px;
+}
+
 #logoAP{
     width:125px;
+}
+
+img{
+    width:35px;
 }
