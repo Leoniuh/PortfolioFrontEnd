@@ -1,12 +1,14 @@
 .row{
-    padding:25px;
+    padding:4px 25px;
 }
 
 div{
-    background-color: rgb(23, 0, 175);
+    background-color: #1d1d1d;
     color: beige;
 }
 
-h1, h3{
-    display: inline;
+h1{
+    padding: 20px 0px;
+    margin:0px;
+    color: rgb(46, 245, 39);
 }

@@ -1,15 +1,20 @@
 *{
-    color: beige;
+    color: #FFFFFF;
 }
 
 .row{
-    background-color: rgb(23, 0, 175);
+    background-color:#1d1d1d;
+}
+
+p{
+    margin: 0px;
 }
 
 footer{
     font-size: 14px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 2px -2px 4px #000000;
+    box-shadow: 2px -2px 7px rgb(46, 245, 39);
 }

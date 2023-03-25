@@ -1,41 +1,22 @@
 *{
-    color: beige;
+    color: #A8A8A8;
 }
 
 .row{
-    padding:15px;
+    padding: 4px 25px;
+}
+
+h1{
+ padding: 15px 0px 0px;
+ margin:0px;
+ color:rgb(46, 245, 39);
 }
 
 div{
-    background-color:rgb(23, 0, 175);
-    text-align: center;
+    background-color: #1d1d1d;
 }
 
-/* Nombre del usuario*/
-#nombre{
-    margin-top:20%;
-    font-weight: bold;
-}
-
-/* foto del usuario*/
-@media (min-width:576px){
-#foto__de_usuario {
- position:absolute;
- width: 15%;
- left: 2%;
- top:475px;
- border-radius: 50%;
- box-shadow: 4px 2px 2px rgb(3, 50, 136);
- }
-}
-
-@media (max-width:575px){
-    #foto__de_usuario {
-     position:absolute;
-     width: 25%;
-     left: 2%;
-     top:545px;
-     border-radius: 50%;
-     box-shadow: 4px 2px 2px rgb(3, 50, 136);
-    }
+.contenedor{
+    border-radius: 25px;
+    border: 1px solid rgb(67, 228, 61);
 }

@@ -1,14 +1,18 @@
 *{
-    color: beige;
+    color: #FFFFFF;
 }
 
 .row{
-    padding: 20px;
-    background-color: rgb(23, 0, 175);
+    padding: 4px 25px 20px;
+    background-color: #1D1D1D ;
 }
 
-.contenedor{
-    width: auto;
+h1{
+    color: rgb(46, 245, 39);
+}
+
+.extensor{
+ padding: 1px 25px;
 }
 
 .parte1, .parte2{
