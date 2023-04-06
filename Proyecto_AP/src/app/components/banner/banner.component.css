@@ -1,45 +1,96 @@
 img{
     width: 100%;
-    height: 550px;
-    border-radius: 5px;
+    height: 400px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 0px;
 }
 
 .row{
     padding: 15px;
+    margin: 0px;
+}
+
+.contenedor{
+    border: 1px solid rgb(67, 228, 61);
+    border-radius: 25px;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Banner del usuario */
+
+h1{
+    position: relative;
+    color: #fff;
+    font-size: 80px;
+    top:-250px;
+    margin: -11px;
+}
+
+@media (max-width:490px){
+ h1{
+  display: none;
+ }
 }
 
 /* Nombre del usuario*/
 
-p{
-    color:#FFFFFF;
+
+.col-xs-12{
+    padding-left: 12px;
+    text-align: initial;
 }
 
-/* foto del usuario*/
+.col-sm-6{
+    padding-left: 12px;
+    text-align: initial;
+}
+
+.col-md-4{
+    padding-left: 12px;
+    text-align: initial;
+}
+
+.col-lg-3{
+    padding-left: 12px;
+    text-align: initial;
+}
+
+p{
+    color:#fff;
+    display: inline-block;
+}
+
+#nombre{
+    font-size: 25px;
+}
+
+/* Foto del usuario*/
 
 
 @media (max-width:1025px){
-    #foto__de_usuario {
-     position:absolute;
-     width: 150px;
-     height: 150px;
-     border-radius: 50%;
-     left: 2%;
-     top:550px;
-     box-shadow: 4px 2px 2px rgb(3, 0, 15);
-     }
-    }
+#foto__de_usuario {
+ position:absolute;
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ left: 2%;
+ top: 400px;
+ box-shadow: 4px 2px 2px rgb(3, 0, 15);
+ }
+}
 
-    @media (min-width:725px){
-        #foto__de_usuario {
-         position:absolute;
-         width: 150px;
-         height: 150px;
-         border-radius: 50%;
-         left: 2%;
-         top:550px;
-         box-shadow: 4px 2px 2px rgb(3, 0, 15);
-         }
-        }    
+@media (min-width:725px){
+#foto__de_usuario {
+ position:absolute;
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ left: 2%;
+ top: 400px;
+ box-shadow: 4px 2px 2px rgb(3, 0, 15);
+ }
+}    
 
 @media (max-width: 724px){
 #foto__de_usuario {
@@ -48,19 +99,19 @@ p{
  height: 150px;
  border-radius: 50%;
  left: 3%;
- top:550px;
+ top: 400px;
  box-shadow: 4px 2px 2px rgb(3, 0, 15);
  }
 }
 
 @media (min-width:400px){
-    #foto__de_usuario {
-     position:absolute;
-     width: 150px;
-     height: 150px;
-     left: 6%;
-     top:545px;
-     border-radius: 50%;
-     box-shadow: 4px 2px 2px rgb(3, 0, 15);
-    }
+#foto__de_usuario {
+ position:absolute;
+ width: 150px;
+ height: 150px;
+ left: 6%;
+ top: 400px;
+ border-radius: 50%;
+ box-shadow: 4px 2px 2px rgb(3, 0, 15);
+ }
 }

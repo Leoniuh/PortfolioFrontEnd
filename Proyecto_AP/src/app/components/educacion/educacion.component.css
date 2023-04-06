@@ -7,8 +7,12 @@ div{
     color: #FFFFFF;
 }
 
+.contenedor{
+    padding:0px 12px 10px 12px;
+   }
+
 h1{
-    padding: 15px 0px 0px;
+    padding: 0px 0px 16px 0px;
     margin:0px;
     color:rgb(46, 245, 39);
 }
@@ -19,4 +23,8 @@ p{
 
 h3{
     display: inline;
+}
+
+ul{
+    list-style: none;
 }
