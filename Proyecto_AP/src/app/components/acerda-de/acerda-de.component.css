@@ -4,6 +4,8 @@
 
 .row{
     padding: 4px 25px;
+    position: relative;
+    margin: 0px;
 }
 
 h1{
@@ -19,4 +21,10 @@ div{
 .contenedor{
     border-radius: 25px;
     border: 1px solid rgb(67, 228, 61);
+}
+
+.wave{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }

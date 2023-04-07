@@ -1,10 +1,11 @@
 .row{
     padding: 4px 25px;
+    margin: 0px;
 }
 
 div{
-    background-color: #1d1d1d;
-    color: #FFFFFF;
+    background-color: #4f95b3;
+    color: #000;
 }
 
 .contenedor{
@@ -14,11 +15,14 @@ div{
 h1{
     padding: 0px 0px 16px 0px;
     margin:0px;
-    color:rgb(46, 245, 39);
+    color: rgb(7, 209, 0);
+    font-style: oblique;
+    font-weight: bold;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 p{
- color:#FFFFFF;
+ color:#000;
 }
 
 h3{

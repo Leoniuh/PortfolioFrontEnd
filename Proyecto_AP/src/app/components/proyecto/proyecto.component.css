@@ -2,9 +2,20 @@
     color: #FFFFFF;
 }
 
+.wave{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+svg{
+    background-color: #4f95b3;
+}
+
 .row{
     padding: 4px 25px 20px;
     background-color: #1D1D1D ;
+    margin: 0px;
 }
 
 .contenedor{
