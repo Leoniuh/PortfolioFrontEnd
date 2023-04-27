@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acerda-de.component.css']
 })
 export class AcerdaDeComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

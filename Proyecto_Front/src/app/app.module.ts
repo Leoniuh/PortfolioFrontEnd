@@ -13,7 +13,18 @@ import { HysComponent } from "./components/hys/hys.component";
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from "./components/login/LoginComponent";
+import { ErrorComponent } from './components/error/error.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditHysComponent } from './components/hys/edit-hys.component';
+import { NewHysComponent } from './components/hys/new-hys.component';
 
 @NgModule({
     declarations: [
@@ -26,15 +37,27 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         EducacionComponent,
         HysComponent,
         ProyectoComponent,
-        FooterComponent
+        FooterComponent,
+        HomeComponent,
+        LoginComponent,
+        ErrorComponent,
+        NewExperienciaComponent,
+        EditExperienciaComponent,
+        NewEducacionComponent,
+        EditEducacionComponent,
+        EditHysComponent,
+        NewHysComponent
     ],
     bootstrap: [AppComponent],
-    providers: [],
+    providers: [
+        interceptorProvider
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         NgCircleProgressModule.forRoot({}),
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
  ]
 })
 export class AppModule { }

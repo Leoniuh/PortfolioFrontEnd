@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../../../assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.recuadro{
+    position: fixed;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(12, 12, 12, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+}
+
+.recuadro.active{
+    height: 520px;
+}
+
+.recuadro .icon-cerrar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(11, 14, 17);
+    font-size: 32px;
+    fill: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.recuadro .form-contenedor{
+    width: 100%;
+    padding: 40px;   
+}
+
+.recuadro .form-contenedor.login{
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.recuadro.active .form-contenedor.login{
+    transition: none;
+    transform: translateX(400px);
+}
+
+.recuadro.active2 .form-contenedor.login{
+    transition: none;
+    transform: translateX(400px);
+}
+
+.recuadro .form-contenedor.registro{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.recuadro.active .form-contenedor.registro{
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.recuadro .form-contenedor.recuperacion{
+    position: absolute;
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.recuadro.active2 .form-contenedor.recuperacion{
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.form-contenedor h2{
+    font-size: 32px;
+    color: aqua;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+}
+
+.input-contenedor{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(11, 14, 17);
+    margin: 30px 0px;
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgb(11, 14, 17);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-contenedor input:focus~label,
+.input-contenedor input:valid~label{
+    top: -5px;
+}
+
+.input-contenedor input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(11, 14, 17);
+    font-weight: 600;
+    padding: 0px 35px 0px 5px;
+}
+
+.input-contenedor .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    color: rgb(11, 14, 17);
+    line-height: 57px;
+}
+
+.aviso-recordar{
+    font-size: 14px;
+    color: rgb(11, 14, 17);
+    font-weight: 500;
+    margin: -15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aviso-recordar label input{
+    accent-color: rgb(11, 14, 17);
+    margin-right: 3px;
+}
+
+.aviso-recordar a{
+    color: rgb(11, 14, 17);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: click;
+}
+
+.aviso-recordar a:hover{
+    transition: 0.8s;
+    color: aqua;
+    text-decoration: underline;
+}
+
+.boton-inicio{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(11, 14, 17);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    color: aqua;
+    font-weight: 500;
+}
+
+.registro{
+    font-size: 14px;
+    color: rgb(11, 14, 17);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0px 10px;
+}
+
+.link-registro{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: click;
+    cursor: pointer;
+}
+
+.link-registro:hover{
+    text-decoration: underline;
+}
+
+.link-ingreso{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: click;
+    cursor: pointer;
+}
+
+.link-ingreso:hover{
+    text-decoration: underline;
+}

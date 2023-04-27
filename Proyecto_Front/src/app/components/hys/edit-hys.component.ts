@@ -1,0 +1,40 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Hys } from 'src/app/modelos/hys';
+import { HysService } from 'src/app/service/hys.service';
+
+@Component({
+  selector: 'app-edit-hys',
+  templateUrl: './edit-hys.component.html',
+  styleUrls: ['./edit-hys.component.css']
+})
+export class EditHysComponent implements OnInit {
+  hys: Hys = null;
+
+  constructor(private sHys: HysService, private activatedRouter: ActivatedRoute,
+    private router: Router) { }
+
+  ngOnInit(): void {
+  const id = this.activatedRouter.snapshot.params['id'];
+    this.sHys.detail(id).subscribe(
+      data =>{
+        this.hys = data;
+      }, error =>{
+        alert("Error al modificar la habilidad");
+        this.router.navigate(['']);
+      }
+    )
+  }
+
+  onUpdateHys(): void{
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.sHys.update(id, this.hys).subscribe(
+      data =>{
+        this.router.navigate(['']);
+      }, error =>{
+        alert("Error al modificar la habilidad");
+        this.router.navigate(['']);
+      }
+    )
+  }
+}
