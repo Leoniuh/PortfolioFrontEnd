@@ -7,12 +7,8 @@
             <img src="{{persona.img}}" class="img-fluid" id="foto__de_usuario">
         </div> 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <button type="button" class="btn btn-dark" routerLink="/nuevainf" *ngIf="isLogged"
-            >Añadir información</button>
             <button type="button" class="btn btn-success" routerLink="/editinf/1" *ngIf="isLogged"
                 ><i class="bi bi-pencil-fill"></i></button>
-            <button type="button" class="btn btn-warning" routerLink="/deleteinf/1" *ngIf="isLogged"
-                ><i class="bi bi-file-earmark-x-fill"></i></button>
             <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
             <p>Full Stack Developer Jr</p>
         </div>
