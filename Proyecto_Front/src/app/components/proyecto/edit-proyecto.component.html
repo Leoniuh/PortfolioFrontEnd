@@ -1,16 +1,16 @@
-<div class="row" *ngIf="hys">
+<div class="row" *ngIf="proyecto">
     <div class="contenedor">
         <div class="separador">
             <div>
                 <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                     <div class="form-group">
-                        <label for="nombre">Nombre de la habilidad </label>
-                        <input type="text" class="form-control name-h" id="nombre" name="nombre" [(ngModel)]="hys.nombre" required>
+                        <label for="nombre">Nombre del proyecto </label>
+                        <input type="text" class="form-control name-p" id="nombre" name="nombre" [(ngModel)]="proyecto.nombre" required>
                     </div>
                     <br>
                     <div class="form-group">
-                        <label for="porcentaje">Porcentaje de la habilidad</label>
-                        <input type="text" class="form-control prog" id="porcentaje" name="porcentaje" [(ngModel)]="hys.porcentaje" required>
+                        <label for="descripcion">Descripción del proyecto </label>
+                        <textarea class="form-control des-p" id="descripcion" name="descripcion" [(ngModel)]="proyecto.descripcion" required></textarea>
                     </div>
                     <br>
                     <button class="btn btn-dark">Actualizar</button>

@@ -4,15 +4,17 @@
     <button type="button" class="btn btn-dark" routerLink="/nuevahys" *ngIf="isLogged"
       >Nueva habilidad</button>
   </div>    
-    <div class="col-sm-4 col-md-4 col-lg-4" *ngFor="let hys of hys">
-      <td *ngIf="isLogged"> <button class="btn btn-warning" routerLink="/edithys/{{hys.id}}">
-        <i class="bi bi-pencil-fill"></i></button></td>
-      <td *ngIf="isLogged"><button class="btn btn-danger" (click)="deleteHys(hys.id)">
-        <i class="bi bi-file-earmark-x-fill"></i></button></td>
+    <div class="col-sm-4 col-md-4 col-lg-4 ajustador" *ngFor="let Hys of hys">
+      <div class="">
+        <td *ngIf="isLogged"> <button class="btn btn-warning" routerLink="/edithys/{{Hys.id}}">
+          <i class="bi bi-pencil-fill"></i></button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Hys.id)">
+          <i class="bi bi-file-earmark-x-fill"></i></button></td>
+      </div>
       <circle-progress
-      [percent]="(hys.porcentaje)"
+      [percent]="(Hys.porcentaje)"
       [imageSrc]="''"
-      [title]="(hys.nombre)"
+      [title]="(Hys.nombre)"
       [titleColor]="'#000000'"
       [showTitle]="true"
       [showImage]="false"

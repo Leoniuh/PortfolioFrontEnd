@@ -26,7 +26,7 @@ export class EditHysComponent implements OnInit {
     )
   }
 
-  onUpdateHys(): void{
+  onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.sHys.update(id, this.hys).subscribe(
       data =>{

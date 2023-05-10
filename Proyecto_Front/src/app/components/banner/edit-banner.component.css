@@ -19,12 +19,19 @@
     width: 500px;
 }
 
-.separador .form-control.name-e{
+.separador .form-control.name-p{
     width: 200px;
 }
 
-.separador .form-control.prog-e{
+.separador .form-control.ape-p{
     width: 200px;
+}
+
+.separador .form-control.des-p{
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 125px;
+    max-height: 125px;
 }
 
 .form-group label{
@@ -35,9 +42,9 @@
 }
 
 form{
-    height: 300px;
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: 70px;
+    width: 80vh;
     background: transparent;
     border: 2px solid rgba(12, 12, 12, .5);
     border-radius: 20px;

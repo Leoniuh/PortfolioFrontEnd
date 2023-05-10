@@ -8,14 +8,18 @@ import { NewEducacionComponent } from './components/educacion/new-educacion.comp
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { NewHysComponent } from './components/hys/new-hys.component';
 import { EditHysComponent } from './components/hys/edit-hys.component';
+import { EditBannerComponent } from './components/banner/edit-banner.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { ErrorComponent } from './components/error/error.component';
 
 
 
 
 
+
 const routes: Routes = [
-  {path:'', redirectTo: 'home', pathMatch: 'full'},
+  {path:'', redirectTo: 'home', pathMatch: 'full' },
   {path:'home', component: HomeComponent},
   {path:'login', component: LoginComponent},
   {path:'nuevaexp', component: NewExperienciaComponent},
@@ -24,6 +28,9 @@ const routes: Routes = [
   {path:'editedu/:id', component: EditEducacionComponent},
   {path:'nuevahys', component: NewHysComponent},
   {path:'edithys/:id', component: EditHysComponent},
+  {path:'editinf/:id', component: EditBannerComponent},
+  {path:'nuevopro', component: NewProyectoComponent},
+  {path:'editpro/:id', component: EditProyectoComponent},
   {path:'**', component: ErrorComponent}
   
 ];

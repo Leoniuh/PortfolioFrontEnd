@@ -17,7 +17,7 @@ export class NewHysComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCreateHys(): void{
+  onCreate(): void{
     const hys = new Hys(this.nombre, this.porcentaje);
     this.sHys.save(hys).subscribe(data =>{
       alert("Habilidad creada correctamente");

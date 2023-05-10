@@ -25,6 +25,9 @@ import { NewEducacionComponent } from './components/educacion/new-educacion.comp
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 import { EditHysComponent } from './components/hys/edit-hys.component';
 import { NewHysComponent } from './components/hys/new-hys.component';
+import { EditBannerComponent } from './components/banner/edit-banner.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 
 @NgModule({
     declarations: [
@@ -46,7 +49,10 @@ import { NewHysComponent } from './components/hys/new-hys.component';
         NewEducacionComponent,
         EditEducacionComponent,
         EditHysComponent,
-        NewHysComponent
+        NewHysComponent,
+        EditBannerComponent,
+        NewProyectoComponent,
+        EditProyectoComponent
     ],
     bootstrap: [AppComponent],
     providers: [
